@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		54F6086D22DA378100CC6368 /* MyPodDemo.h in Headers */ = {isa = PBXBuildFile; fileRef = 54F6086B22DA378100CC6368 /* MyPodDemo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		54F6087422DA38D600CC6368 /* Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F6087322DA38D600CC6368 /* Services.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		54F6086822DA378100CC6368 /* MyPodDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MyPodDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		54F6086B22DA378100CC6368 /* MyPodDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyPodDemo.h; sourceTree = "<group>"; };
 		54F6086C22DA378100CC6368 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		54F6087322DA38D600CC6368 /* Services.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +50,7 @@
 			children = (
 				54F6086B22DA378100CC6368 /* MyPodDemo.h */,
 				54F6086C22DA378100CC6368 /* Info.plist */,
+				54F6087322DA38D600CC6368 /* Services.swift */,
 			);
 			path = MyPodDemo;
 			sourceTree = "<group>";
@@ -95,6 +98,7 @@
 				TargetAttributes = {
 					54F6086722DA378100CC6368 = {
 						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -130,6 +134,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54F6087422DA38D600CC6368 /* Services.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +266,7 @@
 		54F6087122DA378100CC6368 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -278,6 +284,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.devesh.MyPodDemo;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -286,6 +293,7 @@
 		54F6087222DA378100CC6368 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
